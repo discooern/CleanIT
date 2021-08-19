@@ -1,0 +1,20 @@
+﻿<Window x:Class="Gui.OrderAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gui"
+        mc:Ignorable="d"
+        Title="OrderAdd" Height="300" Width="250">
+    <Grid>
+        <Label Content="Cleaning Date" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="114"/>
+        <DatePicker x:Name="CleaningDateBox" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Height="34" Width="114"/>
+
+        <Label Content="Hours" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Height="26" Width="114"/>
+        <TextBox x:Name="HoursBox" HorizontalAlignment="Left" Margin="10,101,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" Height="34"/>
+
+        <Button Content="Submit" HorizontalAlignment="Left" Margin="20,159,0,0" VerticalAlignment="Top" Height="30" Width="94" Click="AddOrder"/>
+
+        <Button Content="Back" HorizontalAlignment="Left" Margin="172,16,0,0" VerticalAlignment="Top" Height="30" Width="68" Click="Back"/>
+    </Grid>
+</Window>
